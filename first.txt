@@ -1,1 +1,32 @@
 i am vivek and i like cake.
+
+Git commands
+
+1. git version
+
+2. git config --global user.name "flashtech7"
+    git config --global user.email "flashtech007@gmail.com"
+    git config --list
+	git help commit
+
+3. Creating our first repository
+ 
+pwd                  =(tells you the folder you are in)
+cd ~                  =(cd=change directory ~=home)
+cd ..                   =(up one directory)
+ls 	       =(list of all the folders in that directory)
+git init               =(Initialize the repository)
+git add .              =(. add all files in dir)
+
+
+4.  Commit
+
+git commit -m"" 	=(commit with a message)
+
+5. Adding files and the commit log
+
+pwd
+git log		   =(gives a list of all the commits)
+git log --author=""          =(commits from specific person)
+
+     
