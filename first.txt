@@ -21,6 +21,12 @@ git add .              =(. add all files in dir)
 
 4.  Commit
 
+working copy> staging area > repository
+
+git add                     =(This is how we add it to staging area)
+git commit -m""    =(This is how  git keeps track of  it)
+
+
 git commit -m"" 	=(commit with a message)
 
 5. Adding files and the commit log
