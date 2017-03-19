@@ -35,4 +35,58 @@ pwd
 git log		   =(gives a list of all the commits)
 git log --author=""          =(commits from specific person)
 
+8. Viewing the changes that you made
+
+git status
+git diff 		=(working copy and repository)
+git diff --staged             =(staging area and the repository)
+
+"git diff" difference between WORKING and STAGED
+"git diff --staged" or "--cached" differences between STAGED and REPOSITORY
+"git diff HEAD"  difference between WORKING and REPOSITORY
+
+10. How to delete files
+
+git rm second.txt              =(remove that file with name second.txt)
+git status		   =(gives you status that file deleted)
+git commit -m""               =(commit those changes to the repository)  
      
+11. How to Move and Rename Files
+
+git add home.txt 
+git rm first .txt                          =(This is how we rename a file from first.txt to home.txt)
+git status
+git commit -m "renamed file"  =(Commit the changes)
+
+or(easy)
+git mv first.txt home.txt                       =(This is how we rename a file from first.txt to home.txt)
+git mv first.txt NewFolder/home.txt   =(Rename and move to different folder)
+git commit -m "renamed file"              =(Commit the changes)
+
+13. How to Commit Directly to the Repository
+
+git status                            =(modified files shown)
+git commit -am ""             =(commit directly to the repository)
+
+14. Taking care of blunders
+
+git status                                  =(It will show file modified by someone else)
+git checkout -- index.html      =(Take sumthin(good files) from repository and make it your working copy)
+
+15. Unstage files
+
+git add .   	      		   =(all files added)
+git status     	  	   =(you modified and added new file)
+git reset HEAD nameoffile.html	    =(Unstage file from staging area and then recommit it)
+
+16. Getting old version from Repository
+
+first>second>third>second
+
+git log			            =(log of all the commits)
+git checkout 0asd26a -- index.html            =(fetch this good file from back in time)
+git status			            =(modified)
+git commit -am "Undoing the mistake in third commit"    (Add it to repository)
+
+
+
